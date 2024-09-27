@@ -1,0 +1,99 @@
+:root{
+    color-scheme: light dark;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: light-dark (#763356,#0000);
+    color: light-dark (#fffdfe,#763356);
+    margin: 0;
+    padding: 1.5rem;
+}
+
+nav {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    color: #ffff;
+    text-shadow: #000000 1px 1px 2px;
+}
+h2{
+    color: light-dark(#000000, #ac1b63);
+}
+
+button {
+    display: inline-block;
+    padding: .7rem 1.5rem;
+    margin: .7rem;
+    background-color: #763356;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #763356;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #ffff;
+}
+
+#contentContainer {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s;
+    background-color: lightpink;
+}
+
+/* Transición suave para contenido cargado */
+#contentContainer p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
+
+/* Alinear el contenedor y hacerlo responsivo */
+#contentContainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #contentContainer {
+        padding: 15px;
+    }
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+}
+
+header{
+    background: url(foto.jpg) no-repeat center;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+}
+/*
+@media (prefers-color-scheme: dark) {
+    h2{
+        color: #000000;
+    }
+    }
