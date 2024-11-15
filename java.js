@@ -27,3 +27,7 @@ document.getElementById('pagina2').addEventListener('click', function() {
 document.getElementById('pagina3').addEventListener('click', function() {
     loadPage('page3.html');
 });
+
+document.getElementById('pagina4').addEventListener('click', function() {
+    loadPage('page4.html');
+});
